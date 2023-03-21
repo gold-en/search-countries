@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+/rest-country-assets
 
 # testing
 /coverage

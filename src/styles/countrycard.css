@@ -1,0 +1,9 @@
+.country-tile a {
+  color: #161616;
+  text-decoration: none;
+}
+
+.country-tile img {
+  max-width: 100%;
+  border-radius: 5px;
+}
