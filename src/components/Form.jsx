@@ -31,15 +31,16 @@ export default function Form({ setCountries }) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        placeholder="Search For a Country"
-        onChange={handleChange}
-        name="countryName"
-        value={countryName}
-      />
-
+    <div>
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          placeholder="Search For a Country"
+          onChange={handleChange}
+          name="countryName"
+          value={countryName}
+        />
+      </form>
       <br />
       <select id="region" value={region} onChange={handleRegion} name="region">
         <option value=""> Filter By Region </option>
@@ -49,6 +50,6 @@ export default function Form({ setCountries }) {
         <option value="europe">Europe</option>
         <option value="oceania">Oceania</option>
       </select>
-    </form>
+    </div>
   );
 }
