@@ -1,5 +1,6 @@
 import React from 'react';
 import CountryCard from '../components/CountryCard';
+import Form from '../components/Form';
 
 const Home = () => {
   const [countries, setCountries] = React.useState([]);
@@ -7,7 +8,7 @@ const Home = () => {
   React.useEffect(() => {
     fetch('https://restcountries.com/v3.1/all')
       .then(res => res.json())
-      .then(data => setCountries(data.slice(0, 5)));
+      .then(data => setCountries(data.slice(0, 30)));
   }, []);
 
   const countriesElements = countries.map(country => (
@@ -22,7 +23,12 @@ const Home = () => {
     />
   ));
 
-  return <div>{countriesElements}</div>;
+  return (
+    <>
+      <Form setCountries={setCountries} />
+      <div>{countriesElements}</div>
+    </>
+  );
 };
 
 export default Home;

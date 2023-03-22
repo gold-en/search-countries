@@ -1,7 +1,7 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-
-import Home from "./pages/Home";
-import CountryDetail from "./pages/CountryDetail";
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import './App.css';
+import Home from './pages/Home';
+import CountryDetail from './pages/CountryDetail';
 
 const App = () => {
   return (
