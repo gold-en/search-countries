@@ -6,6 +6,7 @@
 body {
   color: #374151;
   background-color: #f4f4f5;
+  font-family: 'Poppins', san-serif;
 }
 
 header {
@@ -18,7 +19,14 @@ header {
   background-color: #fff;
 }
 
+.site-logo {
+  font-weight: 600;
+}
+
 header a {
   text-decoration: none;
   color: #161616;
+}
+header i {
+  margin-right: 10px;
 }

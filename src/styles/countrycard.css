@@ -1,3 +1,11 @@
+.country-tile {
+  width: 340px;
+  padding: 20px;
+  margin: 0 auto;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
 .country-tile a {
   color: #161616;
   text-decoration: none;
@@ -6,4 +14,22 @@
 .country-tile img {
   max-width: 100%;
   border-radius: 5px;
+}
+
+.country-info {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.country-info h1 {
+  margin-bottom: 15px;
+}
+
+.country-info h4 {
+  margin-bottom: 5px;
+  color: #374151;
+}
+
+.country-info span {
+  color: #6b7280;
 }

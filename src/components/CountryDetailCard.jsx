@@ -21,10 +21,9 @@ const CountryDetailCard = props => {
   return (
     <>
       <div className="back-link">
-        <div>
-          <i class="fa-solid fa-arrow-left"></i>
-          <Link to="/">Back</Link>
-        </div>
+        <Link to="/">
+          <i class="fa-solid fa-arrow-left"></i> Back
+        </Link>
       </div>
       <div className="detail-container">
         <img src={props.flagUrl} alt="country flag" />

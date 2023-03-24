@@ -1,0 +1,31 @@
+.form {
+  width: 340px;
+  margin: 20px auto;
+}
+
+form input,
+select {
+  outline: none;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+select {
+  width: 50%;
+  color: #6b7280;
+}
+
+input[type='text'] {
+  background-image: <i class= 'fa-regular fa-moon' ></i>;
+}
+
+input[type='text']:focus {
+  border: 1px solid #86efac;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+select:focus {
+  border: 1px solid #86efac;
+}

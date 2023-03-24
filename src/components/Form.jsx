@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-
+import '../styles/form.css';
 export default function Form({ setCountries }) {
   const [countryName, setCountryName] = React.useState('');
 
@@ -20,7 +20,7 @@ export default function Form({ setCountries }) {
     region &&
       fetch(`https://restcountries.com/v3.1/region/${region}`)
         .then(res => res.json())
-        .then(data => setCountries(data.slice(0, 20)));
+        .then(data => setCountries(data));
   }, [region]);
 
   function handleSubmit(event) {
@@ -34,7 +34,7 @@ export default function Form({ setCountries }) {
   }
 
   return (
-    <div>
+    <div className="form">
       <form onSubmit={handleSubmit}>
         <input
           type="text"

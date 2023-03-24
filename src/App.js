@@ -10,7 +10,10 @@ const App = () => {
         <Link className="site-logo" to="/">
           Where in the world?
         </Link>
-        <div>Dark Mode</div>
+        <div>
+          <i class="fa-regular fa-moon"></i>
+          Dark Mode
+        </div>
       </header>
       <Routes>
         <Route path="/" element={<Home />} />
