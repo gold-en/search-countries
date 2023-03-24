@@ -1,0 +1,90 @@
+.back-link {
+  padding: 20px;
+  width: 340px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.back-link div {
+  display: inline-block;
+  padding: 4px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  width: 90px;
+  text-align: center;
+}
+
+.back-link a {
+  text-decoration: none;
+  color: #6b7280;
+  margin-left: 4px;
+}
+
+.detail-container {
+  padding: 20px;
+  width: 340px;
+  margin: 0 auto;
+}
+.detail-container img {
+  width: 100%;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.detail span {
+  color: #6b7280;
+}
+
+.name-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.name-detail-1 {
+  margin-bottom: 30px;
+}
+
+.name-detail-1 h2 {
+  margin-bottom: 25px;
+}
+
+.name-detail-1 div h4 {
+  margin-bottom: 10px;
+}
+
+.name-detail-2 {
+  margin-bottom: 30px;
+}
+
+.name-detail-2 h4 {
+  margin-bottom: 10px;
+}
+
+.border-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.borders {
+  display: inline-block;
+  padding: 4px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  width: 90px;
+  text-align: center;
+  /* color: #6b7280; */
+}
+
+.border-detail h4 {
+  margin-bottom: 20px;
+}
+.border-detail div {
+  display: flex;
+  justify-content: space-between;
+}

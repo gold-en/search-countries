@@ -3,6 +3,10 @@
   padding: 0;
   margin: 0;
 }
+body {
+  color: #374151;
+  background-color: #f4f4f5;
+}
 
 header {
   display: flex;
@@ -10,7 +14,8 @@ header {
   align-items: center;
   height: 65px;
   padding: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
 }
 
 header a {

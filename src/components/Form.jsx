@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 export default function Form({ setCountries }) {
   const [countryName, setCountryName] = React.useState('');
@@ -14,11 +14,14 @@ export default function Form({ setCountries }) {
     const { value } = event.target;
 
     setRegion(value);
-
-    fetch(`https://restcountries.com/v3.1/region/${region}`)
-      .then(res => res.json())
-      .then(data => setCountries(data.slice(0, 20)));
   }
+
+  useEffect(() => {
+    region &&
+      fetch(`https://restcountries.com/v3.1/region/${region}`)
+        .then(res => res.json())
+        .then(data => setCountries(data.slice(0, 20)));
+  }, [region]);
 
   function handleSubmit(event) {
     event.preventDefault();

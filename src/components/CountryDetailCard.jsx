@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../styles/countrydetailcard.css';
 
 const CountryDetailCard = props => {
   console.log(props);
@@ -19,9 +20,12 @@ const CountryDetailCard = props => {
 
   return (
     <>
-      <Link to="/" className="back-link">
-        Back
-      </Link>
+      <div className="back-link">
+        <div>
+          <i class="fa-solid fa-arrow-left"></i>
+          <Link to="/">Back</Link>
+        </div>
+      </div>
       <div className="detail-container">
         <img src={props.flagUrl} alt="country flag" />
         <div className="detail">
